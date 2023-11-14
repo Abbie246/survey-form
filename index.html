@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head> 
+   <meta charset="UTF-8">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+  <header>
+  <h1 id="title" class="center-text">Abbie's Tech Survey Form</h1>
+  <p id="description" class="paragraph">Thank you for taking the time to help us improve the platform</p>
+  </header>
+
+
+
+  <form id="survey-form">
+
+    <label for="name" id="name-label">Name <input type="text" id="name" required placeholder="Enter your name" class="inputbox"></label> 
+ 
+
+
+    <label for="email" id="email-label">Email <input type="email" id="email" required placeholder="Enter your Email" class="inputbox"></label>
+    
+
+
+    <label for="Age (optional)" id="number-label">Age (optional) <input type="number" id="number" min="8" max="99" placeholder="Age" class="inputbox"></label>
+   
+    
+    <label for="dropdown">Which option best describes your current role?</label>
+   <select id="dropdown" required>
+     <option value="0">select current role</option>
+     <option value="1">Student</option>
+     <option value="2">Full Time Job</option>
+     <option value="3">Full Time Learner</option>
+     <option value="4">Prefer not to say</option>
+     <option value="5">Other</option>
+   </select>
+   
+   
+   
+   <p class="select">Would you recommend Abbie's tech platform to a friend?</p>
+   <label for="definitely"><input type="radio" id="definetly" name="recommend" value="recommend-definitely" class="radio" checked>Definitely</label>
+   <label for="maybe"><input type="radio" id="maybe" name="recommend" value="recommend-maybe" class="radio">Maybe</label> 
+   <label for="not sure"><input type="radio" id="not sure" name="recommend" value="recommend-not sure" class="radio">Not Sure</label>
+   
+
+
+  <label for="dropdown">What is your favorite feature of Abbie's Tech platform?</label>
+   <select id="dropdown">
+     <option value="0">select current role</option>
+     <option value="1">Challenges</option>
+     <option value="2">Projects</option>
+     <option value="3">Community</option>
+     <option value="4">Open Source</option>
+</select>
+
+
+
+<p class="select">what would you like to see improved? (Check all that apply)</p>
+<label for="checkbox"><input type="checkbox" id="checkbox" value="front-end" class="checkbox" checked>Front-End Projects</label>
+<label for="checkbox"><input type="checkbox" id="checkbox" value="back-end" class="checkbox">Back-End Projects</label>
+<label for="checkbox"><input type="checkbox" id="checkbox" value="web-design" class="checkbox">Web Design Projects</label>
+<label for="checkbox"><input type="checkbox" id="checkbox" value="forum" class="checkbox">Forum</label>
+<label for="checkbox"><input type="checkbox" id="checkbox" value="challenges" class="checkbox">Challenges</label>
+<label for="checkbox"><input type="checkbox" id="checkbox" value="data-visualization" class="checkbox">Data Visualization</label>
+<label for="checkbox"><input type="checkbox" id="checkbox" value="videos" class="checkbox">Videos</label>
+
+
+
+<p>Any comments or suggestion?</P>
+<textarea rols="4" cols="50" class="text-area" placeholder="Enter comments here..."></textarea>
+
+
+
+
+<button type="submit" id="submit" class="button">Submit</button> 
+  </form>
+ 
+</body>
+</html>
